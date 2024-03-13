@@ -1,7 +1,7 @@
-# log_analysis
-# A simple log analysis tool
+#  log_analysis
+#  A simple log analysis tool
 
-## v0.0.1
+##  v0.0.1
 
 Useful for sysadmins to get basic information from logs
 
@@ -11,13 +11,14 @@ Useful for sysadmins to get basic information from logs
 
 Options:
 
-`  -h, --help            show this help message and exit`
+-h, --help show this help message and exit
 
-`  -f FILE, --file FILE  Path to file to be analyzed`
+-f FILE, --file FILE  Path to file to be analyzed
 
-` -a {show,requests,urls,ip,ip-detailed,summary,report}, --action {show,requests,urls,ip,ip-detailed,summary,report}`
+-a {show,requests,urls,ip,ip-detailed,summary,report}, --action {show,requests,urls,ip,ip-detailed,summary,report}
 
-                        
+---
+
 Operations to be performed:
     - "show" - Show basic data in columns
     - "requests" - Total number of requests
@@ -49,7 +50,7 @@ Examples of execution
 
 `IP Address - - [Timestamp] "Http-Method URL" Response-Code Numeric-Code "URL" "Browser-data" "-"`
 
-**General flow control description**
+**General control flow description**
 
 1. Accept and parse arguments
 2. Check file format exploring first column to be an IP address

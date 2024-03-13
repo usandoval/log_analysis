@@ -20,14 +20,14 @@ Options:
 ---
 
 Operations to be performed:
-    - "show" - Show basic data in columns
-    - "requests" - Total number of requests
-    - "urls" - Most visited URLs
-    - "ip" - Top 5 identified ips
-    - "ip-detailed" - Top 5 identified ips and show sample requests 
-    - "ip-detailed-full" - Top 5 identified ips and show all requests 
-    - "summary" - Show summary data about file (number of lines), URLs, IPs
-    - "report" - Show summary data about file (number of lines), URLs, IPs and generates report to txt file. The name is generated automatically in the current subdirectory with the following format: 
+- "show" - Show basic data in columns
+- "requests" - Total number of requests
+- "urls" - Most visited URLs
+- "ip" - Top 5 identified ips
+- "ip-detailed" - Top 5 identified ips and show sample requests 
+- "ip-detailed-full" - Top 5 identified ips and show all requests 
+- "summary" - Show summary data about file (number of lines), URLs, IPs
+- "report" - Show summary data about file (number of lines), URLs, IPs and generates report to txt file. The name is generated automatically in the current subdirectory with the following format: 
    `log_report_YYYY-MM-DD_HHMMSS.txt`
     
 

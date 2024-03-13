@@ -70,10 +70,11 @@ Examples of execution
 
 
 **Python libraries used**
--sys
--argparse
--os
--re
--collections 
--datetime
--logging
+
+- sys
+- argparse
+- os
+- re
+- collections 
+- datetime
+- logging

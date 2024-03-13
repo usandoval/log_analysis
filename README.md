@@ -1,7 +1,7 @@
-#log_analysis
-#A simple log analysis tool
+#  log_analysis
+#  A simple log analysis tool
 
-##v0.0.1
+##  v0.0.1
 
 Useful for sysadmins to get basic information from logs
 
@@ -9,11 +9,16 @@ Useful for sysadmins to get basic information from logs
 
 `python3 log_analysis.py -f <Path>/<logfile> -a {show,requests,urls,ip,ip-detailed,summary,report}`
 
-`Options:`
-`  -h, --help            show this help message and exit`
-`  -f FILE, --file FILE  Path to file to be analyzed`
-` -a {show,requests,urls,ip,ip-detailed,summary,report}, --action {show,requests,urls,ip,ip-detailed,summary,report}`
-                        
+Options:
+
+-h, --help show this help message and exit
+
+-f FILE, --file FILE  Path to file to be analyzed
+
+-a {show,requests,urls,ip,ip-detailed,summary,report}, --action {show,requests,urls,ip,ip-detailed,summary,report}
+
+---
+
 Operations to be performed:
     - "show" - Show basic data in columns
     - "requests" - Total number of requests
@@ -25,11 +30,13 @@ Operations to be performed:
     - "report" - Show summary data about file (number of lines), URLs, IPs and generates report to txt file. The name is generated automatically in the current subdirectory with the following format: 
    `log_report_YYYY-MM-DD_HHMMSS.txt`
     
+
     Example:
-    `log_report_2024-03-12_184322.txt`
+    log_report_2024-03-12_184322.txt
 
 
 Examples of execution
+
 `python3 log_analysis.py -f ../data/access_small.log -a show`
 
 `python3 log_analysis.py -f ../data/access_small.log -a ip`
@@ -37,10 +44,13 @@ Examples of execution
 `python3 log_analysis.py -f ../data/access_small.log -a summary`
 
 
+
 **Expected file format**
+
+
 `IP Address - - [Timestamp] "Http-Method URL" Response-Code Numeric-Code "URL" "Browser-data" "-"`
 
-**General logic description**
+**General control flow description**
 
 1. Accept and parse arguments
 2. Check file format exploring first column to be an IP address
@@ -60,10 +70,11 @@ Examples of execution
 
 
 **Python libraries used**
--sys
--argparse
--os
--re
--collections 
--datetime
--logging
+
+- sys
+- argparse
+- os
+- re
+- collections 
+- datetime
+- logging

@@ -9,10 +9,14 @@ Useful for sysadmins to get basic information from logs
 
 `python3 log_analysis.py -f <Path>/<logfile> -a {show,requests,urls,ip,ip-detailed,summary,report}`
 
-`Options:`
+Options:
+
 `  -h, --help            show this help message and exit`
+
 `  -f FILE, --file FILE  Path to file to be analyzed`
+
 ` -a {show,requests,urls,ip,ip-detailed,summary,report}, --action {show,requests,urls,ip,ip-detailed,summary,report}`
+
                         
 Operations to be performed:
     - "show" - Show basic data in columns
